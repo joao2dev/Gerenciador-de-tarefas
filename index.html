@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gerenciador de tarefas</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script/script.js" defer></script>
 </head>
 
 <body>
-    <h1>Bem vindo ao seu gerenciador de tarefas</h1>
-    <h3>por favor digite seu nome</h3>
-    <form class="formNome">
-        <input type="text" name="nome" id="nomeUsuario" placeholder="Digite seu nome">
-        <input type="submit" id="enviarNome" value="nome">
-    </form>
-    <div class="container">
+    <nav id="cadastro">
+        <h1>Bem vindo ao seu gerenciador de tarefas.</h1>
+        <h3>Por favor digite seu nome:</h3>
+        <form class="formNome">
+            <input type="text" name="nome" id="nomeUsuario" placeholder="Digite seu nome">
+            <input type="submit" id="enviarNome" value="Enviar">
+        </form>
+    </nav>
+    <div id="container">
         <div class="novoTitulo"></div>
             <input type="text" name="tarefa" id="tarefaUsuario" placeholder="Digite sua tarefa" max="100">
             <input type="submit" id="salvarTarefa" value="Salvar tarefa">

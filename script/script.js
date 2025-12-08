@@ -1,6 +1,14 @@
 
 const butao = document.getElementById('enviarNome');
+const navAberta = document.getElementById('cadastro');
+const navfechada = document.querySelector('.fechar');
+const container = document.getElementById('container');
+const containerAberto = document.querySelector('.active');
 
+butao.addEventListener('click', () =>{
+    navAberta.classList.toggle('fechar')
+    container.classList.toggle('active')
+})
 butao.addEventListener('click', function (event) {
     event.preventDefault();
     const nome = document.getElementById('nomeUsuario');
