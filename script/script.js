@@ -35,13 +35,13 @@ function atualizarLista() {
             '<button class="apagarTarefa" data-index="' + i + '">Excluir</button><br>';
     }
 
-    // RECRIAR EVENTOS DE EXCLUSÃO (ESSA PARTE RESOLVE O BUG)
+    
     const botoes = document.querySelectorAll('.apagarTarefa');
     botoes.forEach(botao => {
         botao.addEventListener('click', function() {
             const index = this.getAttribute('data-index');
-            tarefas.splice(index, 1); // remove do array
-            atualizarLista(); // RECRIA lista + eventos
+            tarefas.splice(index, 1); 
+            atualizarLista(); 
         });
     });
 }
