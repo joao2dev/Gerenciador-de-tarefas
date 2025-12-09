@@ -7,6 +7,9 @@
     <title>gerenciador de tarefas</title>
     <link rel="stylesheet" href="style.css">
     <script src="script/script.js" defer></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 
 <body>
@@ -21,7 +24,7 @@
     <div id="container">
         <div class="novoTitulo"></div>
             <input type="text" name="tarefa" id="tarefaUsuario" placeholder="Digite sua tarefa" max="100">
-            <input type="submit" id="salvarTarefa" value="Salvar tarefa">
+            <input type="submit" id="salvarTarefa" value="Salvar">
             <div class="tabela">
                 <p>Lista de Tarefas:</p>
             <div id="listaTarefas"></div>
