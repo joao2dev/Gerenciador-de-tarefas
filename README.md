@@ -1,65 +1,43 @@
-````markdown
-# Gerenciador-de-tarefas
+---
+# Gerenciador de Tarefas
 
-Um aplicativo simples para organizar tarefas — criar, listar e remover tarefas, ajudando o usuário a gerenciar seu dia a dia.
+Um gerenciador de tarefas simples feito com HTML, CSS e JavaScript.
 
-## 🎯 Objetivo do Projeto
+## 📝 Sobre o projeto
 
-Este projeto visa oferecer uma forma prática e leve de gerenciar tarefas (todo-list) no navegador. A ideia é permitir que o usuário adicione tarefas, visualize as pendentes e remova itens facilmente.
+O objetivo deste projeto é permitir que o usuário adicione e exclua tarefas de forma rápida e prática direto no navegador.
+Ainda pretendo adicionar mais funções futuramente.
 
-## ⚙️ Tecnologias Utilizadas
+## ⚙️ Tecnologias usadas
 
-- HTML  
-- CSS  
-- JavaScript  
+* HTML
+* CSS
+* JavaScript
 
-## 🚀 Como usar / Instalação
+## 🚀 Como executar
 
-1. Clone este repositório para sua máquina:
-   ```bash
-   git clone https://github.com/joao2dev/Gerenciador-de-tarefas.git
-````
+1. Baixe ou clone o repositório:
 
-2. Acesse a pasta do projeto:
-
-   ```bash
-   cd Gerenciador-de-tarefas
    ```
-3. Abra o arquivo `index.html` no navegador.
-
-## 🧰 Estrutura de Pastas
-
-```
-/
-├── index.html
-├── style.css
-└── script/
-    └── script.js
-```
+   git clone https://github.com/joao2dev/Gerenciador-de-tarefas.git
+   ```
+2. Abra o arquivo **index.html** no navegador.
 
 ## ✅ Funcionalidades atuais
 
 * Adicionar tarefas
 * Listar tarefas
-* Remover tarefas
+* Excluir tarefas
 
-## 🔮 Funcionalidades futuras
-
-Ainda quero implementar mais funções, como:
+## 🔧 Melhorias futuras
 
 * Marcar tarefas como concluídas
 * Editar tarefas
-* Salvar as tarefas no localStorage
-* Criar filtros e categorias
-* Melhorar a interface e responsividade
-
-## 📄 Licença
-
-Projeto sob licença MIT.
+* Salvar tarefas com localStorage
+* Melhorar o layout e a interface
 
 ## 👨‍💻 Autor
 
-* **joao2dev**
+**joao2dev**
 
-```
-```
+---
