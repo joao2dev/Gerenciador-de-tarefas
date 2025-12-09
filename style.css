@@ -208,3 +208,45 @@ input[type="checkbox"]{
     margin-top: 4px;
     
 }
+@media (min-width: 320px) and (max-width: 480px){
+    nav h1{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    nav h3{
+        font-size: 15px;
+    }
+    nav input[type="submit"]{
+        width: 250px;
+        font-size: 1rem;
+        margin-bottom: 10px auto;
+    }
+    nav input[type="text"]{
+        width: 90%;
+    }
+   
+    #container.active input[type="submit"]{
+        width: 70px;   
+        margin-top: 10px auto;
+    }
+    #container.active input[type="text"]{
+        width: 80%;
+    }
+    .tabela{
+        max-width: 90%;
+        height: 300px;
+    }
+    #listaTarefas{
+        font-size: 1.1rem;
+        max-width: 90%;
+        
+    }
+    .apagarTarefa{
+        width: 60px;
+        font-size: 0.8rem;
+        right: 8%;
+    }
+    input[type="checkbox"]{
+        left: 10%;
+    }
+}
