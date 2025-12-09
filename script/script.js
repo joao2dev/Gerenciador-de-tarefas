@@ -12,10 +12,10 @@ butao.addEventListener('click', () =>{
 butao.addEventListener('click', function (event) {
     event.preventDefault();
     const nome = document.getElementById('nomeUsuario');
-    const valor = nome.value;
+    const valor = nome.value.trim();
 
     const novoTitulo = document.querySelector('.novoTitulo');
-    novoTitulo.innerHTML = '<h2>Olá, ' + valor + '!<h3>começe a fazer sua lista de tarefas</h3></h2>';
+    novoTitulo.innerHTML = '<h2>Olá, ' + valor + '!</h2>'+'<h3>começe a fazer sua lista de tarefas:</h3>';
 });
 let tarefas = [];
 
@@ -38,9 +38,9 @@ function atualizarLista() {
 
     for (let i = 0; i < tarefas.length; i++) {
         listaTarefas.innerHTML += 
-            '<input type="checkbox">' +
+            '<div class="lista">'+ '<input type="checkbox">' +
             tarefas[i] +
-            '<button class="apagarTarefa" data-index="' + i + '">Excluir</button><br>';
+            '<button class="apagarTarefa" data-index="' + i + '">Excluir</button></div><br>';
     }
 
     

@@ -12,14 +12,14 @@
 body{
     background-color: var(--cor--primaria-);
 }
+
 nav{
     color: var(--cor--secundaria-);
     margin-top: 15%;
     padding: 1px;
     font-size: 2rem;
-    animation: 3s;
-    animation-name: subir;
-
+    opacity: 100%;
+    animation: aparecer 2s ease-in-out;
     justify-content: space-between;
     justify-items: center;
 }
@@ -33,7 +33,6 @@ nav input{
 }
 nav h1{
     margin-bottom: 10px;
-    
 }
 nav h3{
     margin-bottom: 20px;
@@ -47,7 +46,6 @@ nav input[type="submit"]{
     font-weight: bolder;
     background-color: rgb(47, 189, 47);
     cursor: pointer;
-    ;
 }
 nav input[type="submit"]:hover{
     background-color: rgb(28, 164, 28);
@@ -67,26 +65,146 @@ nav input[type="text"]:focus{
     border: 2px solid rgb(66, 36, 214);
     transition: .5s ease-in-out;
 }
-nav.fechar{
-    animation: 3s;
-    animation-name: subir;
-    display: none;
+#cadastro{
+    opacity: 100%;
+    
 }
-@keyframees subir{
+nav.fechar{
+    display: none;
+    
+}
+
+@keyframes subir{
     form{
         transform: translateY(0);
         opacity: 1;
+        
     }
 
     to{
         transform: translateY(-100%);
         opacity: 0;
+        display: none;
+    }
+}
+@keyframes descer{
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 #container{
     display: none;
 }
 #container.active{
-    display: block; 
+    display: block;
+    animation-name: descer;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    color: var(--cor--secundaria-);
+    margin-top: 15%;
+    padding: 1px;
+    font-size: 2rem;
+    
+
+    justify-content: space-between;
+    justify-items: center;}
+.novoTitulo h1{
+    margin-bottom: 10px;
+}
+.novoTitulo h3{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+#container.active input[type="submit"]{
+    width: 100px;
+    height: 35px;
+    transition: .5s ease-in-out;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-color: rgb(47, 189, 47);
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+#container.active input[type="submit"]:hover{
+    background-color: rgb(28, 164, 28);
+    scale: 1.05;
+    transition: .5s ease-in-out;
+}
+#container.active input[type="text"]{
+    transition: .5s ease-in-out;
+    width: 30%;
+    text-align: left;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+#container.active input[type="text"]:focus{
+    outline: none;
+    scale: 1.01;
+    border: 2px solid rgb(66, 36, 214);
+    transition: .5s ease-in-out;
+}
+#listaTarefas{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #EDF1FE ;
+    max-width: 100%;
+    
+    
+   color: #303234;
+   border-radius: 10px;
+    display: block;
+    font-family: monospace;
+    font-weight: 100;
+}
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.tabela{
+     background-color: #EDF1FE ;
+    max-width: 40%;
+    height: 300px;
+    max-height: auto;
+   color: #303234;
+   font-family: monospace;
+   border-radius: 10px;
+   margin: 0 auto;
+   
+}
+
+.apagarTarefa{
+    background-color: #C8102E;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-left: 10px;
+    justify-content: space-between;
+    position: absolute;
+    width: 100px;
+    right: 31%;
+    margin-top: 1px;
+}
+input[type="checkbox"]{
+    width: 20px;
+    position: absolute;
+    height: 20px;
+    cursor: pointer;
+    left: 33%;
+    margin-top: 4px;
     
 }
