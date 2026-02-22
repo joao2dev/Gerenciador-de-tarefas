@@ -1,43 +1,97 @@
+# Gerenciador de Tarefas (Task Manager)
+
+Aplicação web simples desenvolvida para organização de tarefas diárias.
+O projeto foi criado com foco em prática de desenvolvimento front-end, manipulação de DOM e versionamento com Git, servindo como material de portfólio para vagas de estágio.
+
 ---
-# Gerenciador de Tarefas
 
-Um gerenciador de tarefas simples feito com HTML, CSS e JavaScript.
+## Tecnologias Utilizadas
 
-## 📝 Sobre o projeto
+* HTML5
+* CSS3
+* JavaScript (Vanilla JS)
+* Bootstrap 5 (cards e layout)
+* Git / GitHub
 
-O objetivo deste projeto é permitir que o usuário adicione e exclua tarefas de forma rápida e prática direto no navegador.
-Ainda pretendo adicionar mais funções futuramente.
+---
 
-## ⚙️ Tecnologias usadas
+## Funcionalidades
 
-* HTML
-* CSS
-* JavaScript
+* Inserção de nome do usuário
+* Criação de tarefas
+* Exclusão de tarefas
+* Interface responsiva
+* Cards estilizados com Bootstrap
+* Animações básicas em CSS
+* Manipulação dinâmica do DOM
 
-## 🚀 Como executar
+---
 
-1. Baixe ou clone o repositório:
+## Estrutura do Projeto
 
-   ```
-   git clone https://github.com/joao2dev/Gerenciador-de-tarefas.git
-   ```
-2. Abra o arquivo **index.html** no navegador.
+```
+/gerenciador-de-tarefas
+│
+├── index.html
+├── style.css
+├── script/
+│   └── script.js
+└── README.md
+```
 
-## ✅ Funcionalidades atuais
+---
 
-* Adicionar tarefas
-* Listar tarefas
-* Excluir tarefas
+## Como Executar
 
-## 🔧 Melhorias futuras
+1. Clone o repositório
 
-* Marcar tarefas como concluídas
-* Editar tarefas
-* Salvar tarefas com localStorage
-* Melhorar o layout e a interface
+```
+git clone https://github.com/joao2dev/Gerenciador-de-tarefas.git
+```
 
-## 👨‍💻 Autor
+2. Acesse a pasta
 
-**joao2dev**
+```
+cd Gerenciador-de-tarefas
+```
+
+3. Abra o arquivo
+
+```
+index.html
+```
+
+em qualquer navegador moderno.
+
+---
+
+## Objetivo do Projeto
+
+Este projeto foi desenvolvido para:
+
+* Praticar manipulação de eventos JavaScript
+* Trabalhar com estrutura e estilização de interfaces
+* Utilizar Bootstrap em componentes visuais
+* Simular fluxo básico de aplicação web
+* Demonstrar habilidades técnicas para oportunidades de estágio
+
+---
+
+## Possíveis Melhorias Futuras
+
+* Persistência com LocalStorage
+* Marcação de tarefas concluídas
+* Filtro de tarefas
+* Drag & Drop
+* Integração com API
+* Refatoração para React
+
+---
+
+## Autor
+
+João Guilherme
+Estudante de Desenvolvimento de Sistemas
+Experiência em Web Design, Python e edição de vídeo
 
 ---
